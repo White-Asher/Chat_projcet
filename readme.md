@@ -20,7 +20,11 @@
 ![image](https://user-images.githubusercontent.com/55140122/128791916-ff580eb1-ad12-4c8f-a07a-6ab68cd9f72c.png)
 
 ![image](https://user-images.githubusercontent.com/55140122/128791954-d8aae75f-2dcd-4f5b-8521-a582d66c744d.png)
-## 4\. 실행 결과
+
+## 4\. 프로젝트 기간
+**2021.06.07~2021.06.14**
+
+## 5\. 실행 결과
 
 #### 서버
 
