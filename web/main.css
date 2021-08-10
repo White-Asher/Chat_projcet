@@ -1,0 +1,244 @@
+/* 만들어놓고 필요한 곳에서 쓸 수 있다 */
+:root {
+  --text-color: #eee5e9;
+  --background-color: #d2bcdb;
+  --accent-color: #8f148f52;
+}
+
+/* 폰트는 최상위 컴포넌트에 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 16px;
+  background-color: rgb(248, 249, 250);
+  font-family: ' Noto Sans KR ', 'Black Han Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.navbar {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 22px 12px;
+  background-color: var(--background-color);
+}
+
+.navbar-logo {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.8rem;
+  min-width: 13rem;
+  /* color: var(--text-color); */
+}
+
+.navbar-logo i {
+  color: var(--accent-color);
+}
+.navbar-emoji {
+  font-size: 1.8rem;
+  padding-right: 5px;
+}
+/* menu */
+
+.navbar-menu {
+  font-size: 1.3rem;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+.navbar-menu li {
+  padding: 8px 12px;
+  margin: 0px 10px;
+}
+
+.navbar-menu li:hover {
+  background-color: var(--accent-color);
+  border-radius: 5px;
+}
+
+/* icon */
+.navbar-icon {
+  justify-content: flex-end;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  color: var(--text-color);
+}
+
+.navbar-icon li {
+  font-size: larger;
+  padding: 8px 12px;
+}
+
+.navbar-more {
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: var(--accent-color);
+}
+
+.content {
+  padding: 2rem 5rem;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.detail-title {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: var(--accent-color) 4px solid;
+}
+
+.detail-content__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 3%;
+}
+
+.detail-content {
+  font-family: 'Noto Sans CJK KR', ' -webkit-body', sans-serif;
+  margin-top: 16px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-img {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  font-family: 'Noto Sans CJK KR', ' -webkit-body', sans-serif;
+}
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #dadada;
+  text-align: center;
+}
+th {
+  border-bottom: 3px solid #dadada;
+  font-weight: bold;
+}
+.member-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.member-content {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border-radius: 70%;
+  overflow: hidden;
+}
+.profile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 3rem;
+  margin-left: 2rem;
+  border-bottom: var(--accent-color) 4px solid;
+}
+
+@media screen and (max-width: 1024px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body,
+  html {
+    font-size: 12px;
+  }
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+
+    justify-content: space-between;
+    padding: 8px 24px;
+  }
+
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+   .navbar-menu a {
+    display: block;
+  }
+
+  .navbar-icon {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    font-size: 9px;
+  }
+
+  .navbar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar-logo {
+    min-width: 2.3rem;
+    font-size: 2rem;
+  }
+  .navbar-emoji {
+    font-size: 2.3rem;
+  }
+  .navbar-typo {
+    display: none;
+  }
+}
