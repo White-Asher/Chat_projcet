@@ -11,7 +11,7 @@ def Current_Time():
 
 # DB에 데이터 입력을 실행하는 함수 
 def SQL_Input_Function(SQL_Input_Address, SQL_Input_Message): # 인자값 받음 (주소, 메세지)
-    conn = pymysql.connect(host='192.168.35.242', user='root', password='', db='chatproject', port=3306, charset='utf8')
+    conn = pymysql.connect(host='', user='', password='', db='chatproject', port=, charset='utf8')
                                                               # 기존에 생성한 DB에 접속하기 위한 구문
     cur = conn.cursor()                                       # 접속한 DB에 상호작용하기 위한 구문
     cur.execute("INSERT INTO chat_table (time_log, user_addr, message) VALUES (%s, %s, %s)",(Current_Time(), SQL_Input_Address, SQL_Input_Message ))
